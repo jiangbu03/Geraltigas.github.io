@@ -1,0 +1,56 @@
+html,body,div{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.backimage{
+    width: 100%;
+}
+.background{
+    z-index: 0;
+}
+body{
+    background-color: #E6E6E6;
+}
+.thingstoshow{
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    left:1%;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.myself{
+    z-index: 1;
+    background-color: #ffffff;
+    width: 25%;
+    border-radius: 10px;
+}
+.content{
+    z-index: 1;
+    background-color: #ffffff;
+    width:62%;
+    height: 100%;
+    border-radius: 10px;
+}
+.guidebar{
+    margin-right: 3%;
+    z-index: 1;
+    width: 7%;
+    height:80% ;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.myhead{
+    position: relative;
+    top: 20px;
+    left: 25%;
+    width: 50%;
+    border-radius: 25%
+}
