@@ -3,8 +3,11 @@
     <head>
         <title>Geraltigas's blog</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+        <meta http-equiv="text/html; charset=utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
-    <body>
+    <body style="min-width: 500px">
         <div class="background">
             <image class="backimage" src="icon/web-background.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false"></image>
         </div>
@@ -27,13 +30,41 @@
                 <a href="gura.html"><image class="myrelateweb" src="icon/game.png"></image></a>
             </div>
         </div>
-
         <div class="content">
-
+            <div class="aboutme">
+                <div class="selfsaying">
+                    <text class="aboutmetext">本人简介</text>
+                    <ul class="aboutmelist">
+                        <li>武带cs</li>
+                        <li>不是二次元</li>
+                        <li>计算机小菜鸡</li>
+                        <li>Minecraft玩家</li>
+                        <li>正在学吉他</li>
+                        <li>这个网站纯手打(用了marked来渲染markdown文件)</li>
+                        <li>to be continue</li>
+                    </ul>
+                </div>
+                <hr style="width:90%;border:none;color: rgb(6, 197, 6);height: 2px;background-color: rgb(158, 243, 158);border-radius:1px;">
+                <div class="languages">
+                    <div id="Java" class="language">2
+                    </div>
+                    <div id="Python" class="language">2
+                    </div>
+                    <div id="Javascript" class="language">2
+                    </div>
+                    <div id="HTML" class="language">3
+                    </div>
+                    <div id="CSS" class="language">1
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="guidebar">
-
+            <image src="icon/personal.png" class="guidebarimage" title="个人简介" onclick="personal()"></image>
+            <image src="icon/blog.png" class="guidebarimage blogimage" title="记录" onclick="loadbloglist()"></image>
+            <image src="icon/warning.png" class="guidebarimage" title="警告！"></image>
+            <image src="icon/tobecontinue.png" class="guidebarimage" title="施工中.."></image>
         </div>
         
         </div>

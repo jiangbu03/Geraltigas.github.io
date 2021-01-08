@@ -2,6 +2,20 @@ html,body,div{
     margin: 0px;
     padding: 0px;
 }
+.aboutmetext{
+    font-size: 30px;
+    font-family: Roboto,serif;
+    font-weight: 400;
+    line-height: 40px;
+    color:#b4b0b0;
+}
+.aboutmelist{
+    font-size: 25px;
+    font-family: SimHei;
+    font-weight: 400;
+    line-height: 40px;
+    color:#888684;
+}
 .myself{
     user-select: none;
 }
@@ -20,6 +34,7 @@ html,body,div{
 }
 .myrelateweb{
     width: 30px;
+    -webkit-user-drag: none;
 }
 body,html{
     height: 100%;
@@ -56,20 +71,130 @@ body{
     z-index: 1;
     background-color: #ffffff;
     width:62%;
-    height: 100%;
     border-radius: 10px;
+    min-height: 95%;
+    user-select: none;
 }
 .guidebar{
     margin-right: 3%;
     z-index: 1;
-    width: 7%;
+    width: 5%;
     height:80% ;
     background-color: #ffffff;
     border-radius: 10px;
+    border:1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+image{
+    -webkit-user-drag: none;
+}
+.guidebarimage{
+    -webkit-user-drag: none;
+    width: 80%;
+    padding: 5%;
+}
+.guidebarimage:hover{
+    -webkit-user-drag: none;
+    width: 80%;
+    background-color: #d4d0d0;
+    border-radius: 10%;
+    padding:5%;
+}
+.blogimage{
+    width: 70%;
+    padding: 10%;
+    padding-left:15%;
+}
+.blogimage:hover{
+    width: 70%;
+    padding: 10%;
+    padding-left:15%;
 }
 .myhead{
     position: relative;
     top: 20px;
     width: 50%;
-    border-radius: 25%
+    border-radius: 25%;
+    -webkit-user-drag: none;
+}
+.aboutme{
+    padding-top:20px;
+}
+.aboutme2{
+    padding-top:20px;
+}
+.selfsaying{
+    width: 80%;
+    transform: translate(10%);
+    padding-left:20px;
+}
+.languages{
+    margin: 5%;
+    height:auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.language{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.divlanguageimage{
+    width: 100%;
+}
+.languagesimage{
+    width: 7%;
+    height: auto;
+}
+.blogdivcontainor{
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.blogdiv:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15%;
+    border-bottom:2px solid rgb(211, 211, 211);
+    border-top:2px solid rgb(211, 211, 211);
+}
+.blogdiv:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15%;
+    border-bottom:2px solid rgb(211, 211, 211);
+}
+.blogdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15%;
+    border-bottom:2px solid rgb(211, 211, 211);
+    font-size: 25px;
+    font-family: SimHei;
+    font-weight: 400;
+    line-height: 40px;
+    color:#888684;
+}
+.blogdiv:hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15%;
+    border-bottom:2px solid rgb(211, 211, 211);
+    font-size: 25px;
+    font-family: SimHei;
+    font-weight: 400;
+    line-height: 40px;
+    color:#727170;
+    background-color: #c0c0c0;
 }
