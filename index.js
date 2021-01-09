@@ -34,6 +34,7 @@ function loadbloglist(){
         if(http.readyState == 4){
             if(http.status == 200||http.status == 0){
                 let reg = /<li><a href=\"\/Markdownblog\/.*?\.md/g;
+                console.log(http.responseText);
                 let list = http.responseText.match(reg);
                 let html = ""
                 for(let i=0; i<list.length; i++){
