@@ -28,7 +28,7 @@ function topoint(timestring){
 }
 function loadbloglist(){
     let http = new XMLHttpRequest();
-    http.open("GET","Markdownblog/",true);
+    http.open("GET","Markdownblog\/",true);
     http.send(null);
     http.onreadystatechange = function(){
         if(http.readyState == 4){
