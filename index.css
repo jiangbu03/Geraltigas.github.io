@@ -174,7 +174,7 @@ image{
     border-bottom:2px solid rgb(211, 211, 211);
 }
 .content div div p{
-    max-width: 100%;
+    max-width: 80%;
 }
 .blogdiv{
     display: flex;
