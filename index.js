@@ -34,7 +34,6 @@ function loadbloglist(){
         if(http.readyState == 4){
             if(http.status == 200||http.status == 0){
                 let reg = /<li><a href=\"\/Markdownblog\/.*?\.md/g;
-                console.log(http.responseText);
                 let list = http.responseText.match(reg);
                 let html = ""
                 for(let i=0; i<list.length; i++){
@@ -44,7 +43,6 @@ function loadbloglist(){
                 let element = document.getElementsByClassName("content")[0];
                 element.innerHTML = "";
                 html = "<div class='blogdivcontainor'>"+html+"</div>"
-                console.log(html)
                 document.getElementsByClassName("content")[0].innerHTML = html;
             }else{
                 alert(http.status);
@@ -64,9 +62,23 @@ function loadblog(name){
                 let element = document.getElementsByClassName("content")[0];
                 element.innerHTML = "";
                 let content = document.getElementsByClassName("content")[0];
-                content.innerHTML = "<div style='padding:5%;'>"+marked(markdown)+"</div>";
+                let https = new XMLHttpRequest();
+                https.open("GET","markdown.css",true);
+                https.send(null);
+                var markdowncss;
+                https.onreadystatechange = function(){
+                    if(http.readyState == 4){
+                        if(http.status == 200||http.status == 0){
+                            var markdowncss1 = https.responseText;
+                        }else{
+                            console.log(https.status)
+                        }
+                        markdowncss = markdowncss1
+                        content.innerHTML = "<div style='padding:5%;'><style scoped>"+markdowncss+"</style>"+marked(markdown)+"</div>";
+                    }
+                }
             }else{
-                alert(http.status);
+                console.log(http.status);
             }
         }
     };
