@@ -1,14 +1,8 @@
-:root {
-        --side-bar-bg-color: #fafafa;
-        --control-text-color: #777;
-        --monospace: "Jetbrains Mono", "思源黑体 CN";
-    }
-    
     .title-text {
         font-size: 14px;
     }
     
-    body, .title-text {
+     .title-text {
         background-color: white;
         font-family: "Inter", "思源黑体 CN";
         color: rgb(12, 12, 12);
