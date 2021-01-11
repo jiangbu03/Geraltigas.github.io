@@ -18,7 +18,7 @@
 ![ceshi](/icon/Gawr%20Gura.png)
 
 #### hyperlink
-[ceshi](www.google.com)
+[ceshi](https://www.google.com)
 
 #### quote
 > quote1 quote2 quote3
