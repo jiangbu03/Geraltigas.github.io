@@ -157,6 +157,7 @@ image{
     bottom: 20px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 4%;
 }
 .blogdiv:first-child{
     display: flex;
