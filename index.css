@@ -181,7 +181,7 @@ image{
     padding-right:5%;
 }
 .content div p img{
-    max-width: 80%;
+    max-width: 100%;
 }
 .blogdiv{
     display: flex;
