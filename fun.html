@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Fun</title>
+        <style type="text/css">
+        body,div,image,html{
+            padding:0;
+            border:0;
+            margin:0;
+        }
+        .containor{
+            margin-top:30px;
+            width:100%;
+            height: auto!important;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: start
+        }
+        .items{
+            width: 22%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            height: 22vw;
+            border-radius: 15%;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .items img{
+            width: 100%;
+            border-radius: 15.1%;
+            z-index: 1;
+            transform: rotateY(-180deg);
+        }
+        .items div{
+            border:0;
+            padding:0;
+            display: block;
+            position: absolute;
+            height: 101%;
+            width: 101%;
+            border-radius: 15%;
+            z-index: 2;
+            transform: rotateY(0deg);
+        }
+        .items div,img{
+            backface-visibility: hidden;
+            transition: transform .25s ease-in-out;
+        }
+        .items:hover img{
+            transform: rotateY(0deg);
+        }
+        .items:hover div{
+            transform: rotateY(180deg);
+        }
+        .image{
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            user-select: none;
+        }
+        #div1{
+            background-image: linear-gradient(135deg,rgb(197, 66, 61),rgb(242, 165, 137));
+        }
+        #div2{
+            background-image: linear-gradient(110deg,rgb(242, 165, 137),rgb(249, 217, 206));
+        }
+        #div3{
+            background-image: linear-gradient(70deg,rgb(249, 217, 206),rgb(204, 194, 195));
+        }
+        #div4{
+            background-image: linear-gradient(45deg,rgb(204, 194, 195),rgb(151, 102, 124));
+        }
+        #div5{
+            background-image: linear-gradient(90deg,rgb(225, 143, 132),rgb(246, 203, 182));
+        }
+        #div6{
+            background-image: linear-gradient(90deg,rgb(246, 203, 182),rgb(246, 242, 239));
+        }
+        #div7{
+            background-image: linear-gradient(90deg,rgb(249, 236, 230),rgb(196, 222, 237));
+        }
+        #div8{
+            background-image: linear-gradient(90deg,rgb(196, 222, 237),rgb(160, 172, 196));
+        }
+        #div9{
+            background-image: linear-gradient(45deg,rgb(161, 111, 123),rgb(214, 175, 168));
+        }
+        a{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 4;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="containor">
+                <div class="items">
+                    <a href="minecarft.html"></a>
+                    <div class="cover" id="div1"></div>
+                    <img src="/pictrue/games/minecarft.jpg" class="image">
+                </div>
+                <div class="items">
+                    <a href="gura.html"></a>
+                    <div class="cover" id="div2"></div>
+                    <img src="/pictrue/games/gura.jpg" class="image">
+                </div>
+                <div class="items">
+                    <div class="cover" id="div3"></div>
+                    <img src="/pictrue/games/The-Witcher.jpg" class="image">
+                </div>
+                <div class="items">
+                    <div class="cover" id="div4"></div>
+                    <img src="/pictrue/games/img_2209.png" class="image">
+                </div>
+                <div class="items">
+                    <div class="cover" id="div5"></div>
+                    <img src="/pictrue/games/halflife.jpg" class="image">
+                </div>
+                <div class="items">
+                    <div class="cover" id="div6"></div>
+                    <img src="/pictrue/games/gmod.jpg" class="image">
+                </div>
+                <div class="items">
+                    <div class="cover" id="div7"></div>
+                    <img src="/pictrue/games/human-fall-flat.jpg" class="image">
+                </div>
+                <div class="items">
+                    <div class="cover" id="div8"></div>
+                    <img src="/pictrue/games/left4dead.jpg" class="image">
+                </div>
+                <div class="items">
+                    <div class="cover" id="div9"></div>
+                    <img src="/pictrue/games/cyberpunk.jpg" class="image">
+                </div>
+        </div>
+    </body>
+</html>
