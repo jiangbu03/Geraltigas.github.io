@@ -19,6 +19,9 @@ html,body,div{
 .myself{
     user-select: none;
 }
+.player{
+    width: 100%;
+}
 #relateweb{
     display: flex;
     flex-wrap: wrap;
