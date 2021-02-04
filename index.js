@@ -76,6 +76,7 @@ function loadblog(name){
                         markdowncss = markdowncss1
                         content.innerHTML = "<div style='padding:5%;'><style scoped>"+markdowncss+"</style>"+marked(markdown)+"</div>";
                         let myElement = document.getElementsByClassName("player")[0];
+                        myElement.style = "width:100%;";
                         console.log(myElement.clientWidth);
                         myElement.style = "width:100%; height:" + myElement.clientWidth*0.7 + "px;";
                         console.log(myElement);
